@@ -10,5 +10,4 @@ public class SaludApplication {
 		SpringApplication.run(SaludApplication.class, args);
 	}
 
-
 }
