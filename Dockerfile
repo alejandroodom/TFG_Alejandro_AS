@@ -5,7 +5,7 @@ FROM openjdk:21-jdk-slim
 WORKDIR /app
 
 # Copia el archivo JAR que se genera al construir tu aplicación
-COPY target/salud-0.0.1-SNAPSHOT.jarwq app.jar
+COPY target/salud-0.0.1-SNAPSHOT.jar app.jar
 
 # Expón el puerto que usará la aplicación
 EXPOSE 8080
