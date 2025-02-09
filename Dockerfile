@@ -13,15 +13,15 @@ EXPOSE 8080
 # Comando para iniciar la aplicación
 CMD ["java", "-jar", "app.jar"]
 
-# Usa la imagen de Maven para compilar el proyecto
-FROM maven:3.9.0-eclipse-temurin-17 AS build
+# Etapa de construcción con JDK 21
+FROM maven:3.9.9-eclipse-temurin-21 AS build
 WORKDIR /app
 COPY . .
 RUN mvn clean package -DskipTests
 
-# Usa la imagen de OpenJDK para correr la app
+# Etapa de ejecución
 FROM openjdk:21-jdk-slim
 WORKDIR /app
 COPY --from=build /app/target/salud-0.0.1-SNAPSHOT.jar app.jar
+EXPOSE 8080
 CMD ["java", "-jar", "app.jar"]
-
