@@ -79,7 +79,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
-		<!-- Dependencia para manejo de JSON Web Token (JWT) -->
 
 		<!-- Dependencia para validación de la entrada -->
 		<dependency>
