@@ -21,6 +21,7 @@
 <br><br>Estará formado por tres capas principales, que se conectarán entre sí para una perfecta sincronicidad y funcionamiento de nuestra aplicación: Front-End, Back-End y Storage Service.
 <br>
 - **Back-End:** La parte lógica será programada en Java mediante Spring Boot con Maven, y desplegada en Render.
+  <br>La estructura de la parte lógica se dividirá en carpetas, en las cuales se incluirán clases específicas que interaccionarán entre ellas para el correcto funcionamiento de la aplicación.
 - **Front-End:** La parte de diseño será realizada con React y desplegada en Vercel.
 - **Base de Datos:** Para el almacenamiento en la nube se hará uso del servicio de base de datos no relacional MongoDB Atlas, en el que se almacenarán y gestionarán los datos de la aplicación.
 
