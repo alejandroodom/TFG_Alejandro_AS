@@ -10,7 +10,6 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -32,7 +31,7 @@ public class AuthController {
     @PostMapping("/register")
     public ResponseEntity<?> registerUser(@RequestBody User user) {
         userService.createUser(user);
-        return ResponseEntity.ok("User created successfully");
+        return ResponseEntity.ok("¡Usuario registrado con éxito!");
     }
 
     @PostMapping("/login")
