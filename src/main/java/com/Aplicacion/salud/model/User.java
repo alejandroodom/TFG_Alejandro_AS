@@ -72,7 +72,7 @@ public class User {
         return birthdate;
     }
 
-    public void setBirthdateo(LocalDate birthdate) {
+    public void setBirthdate(LocalDate birthdate) {
         this.birthdate = birthdate;
     }
 
