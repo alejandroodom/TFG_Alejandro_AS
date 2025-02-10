@@ -33,7 +33,7 @@
 - ### **Autosuficiencia y libertad vital** 🏃‍♂️
   Una serie de herramientas necesarias para que puedas gestionar tu salud de manera independiente, sin depender constantemente de visitas al médico.
   
-- ### **Autodiagnóstico** 🩺  
+- ### **Tu salud es lo primero** 🩺  
   Tú eres el protagonista de tu salud.
 - ### **Seguimiento diario** 📅  
   Observación de la mejoría y objetivos diariamente.
