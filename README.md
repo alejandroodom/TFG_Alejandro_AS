@@ -5,7 +5,7 @@
 *Alejandro Domínguez Rábano*
 
 ---
-# <br>_HarmToHealth_ 🌞
+# <br>_HarmToHealth_ ![Logo de mi aplicación](images/Logotipo Aplicación (sin fondo).png)
 
 <br>El trabajo se fundamentará en el desarrollo de una **Aplicación Web** para mejorar, monitorear y hacer conscientes y responsables a las personas sobre su **salud** y **bienestar**. 
 <br><br>La aplicación contará con diversas funcionalidades que sumergirán al cliente en un espacio donde querrá aprender y mejorar su **salud** y **calidad de vida** a diario. 
