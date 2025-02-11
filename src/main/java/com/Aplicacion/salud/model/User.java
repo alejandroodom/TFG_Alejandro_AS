@@ -1,11 +1,13 @@
 package com.Aplicacion.salud.model;
 
+import jakarta.validation.constraints.Pattern;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 
 @Document(collection = "users")
@@ -21,9 +23,16 @@ public class User {
     @NotNull
     @Size(min = 8)
     private String password;
+    private boolean phoneVerified;
+    @Pattern(regexp = "^\\+[1-9]\\d{1,14}$", message = "Formato no válido. Introduzca un número de teléfono válido.")
+    private String phoneNumber;
+    private String phoneVerificationCode;
+    private LocalDateTime verificationExpiry;
+
     private String sex;
     private LocalDate birthdate;
     private String country;
+
 
     public User() {
     }
@@ -82,5 +91,36 @@ public class User {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+    public boolean isPhoneVerified() {
+        return phoneVerified;
+    }
+
+    public void setPhoneVerified(boolean phoneVerified) {
+        this.phoneVerified = phoneVerified;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getPhoneVerificationCode() {
+        return phoneVerificationCode;
+    }
+
+    public void setPhoneVerificationCode(String phoneVerificationCode) {
+        this.phoneVerificationCode = phoneVerificationCode;
+    }
+
+    public LocalDateTime getVerificationExpiry() {
+        return verificationExpiry;
+    }
+
+    public void setVerificationExpiry(LocalDateTime verificationExpiry) {
+        this.verificationExpiry = verificationExpiry;
     }
 }
