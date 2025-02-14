@@ -5,7 +5,7 @@
 *Alejandro Domínguez Rábano*
 
 ---
-# <br> <img src="images/Logo Final Definitivo.png" width="300">
+# <br> <img src="images/Imagen11.png" width="300">
 
 <br>El trabajo se fundamentará en el desarrollo de una **Aplicación Web** para mejorar, monitorear y hacer conscientes y responsables a las personas sobre su **salud** y **bienestar**. 
 <br><br>La aplicación contará con diversas funcionalidades que sumergirán al cliente en un espacio donde querrá aprender y mejorar su **salud** y **calidad de vida** a diario. 
