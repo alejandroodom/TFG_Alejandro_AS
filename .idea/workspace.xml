@@ -5,7 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="996d1e0f-b0f3-42b5-854e-60f8812119ff" name="Changes" comment="l">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/images/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/images/logo/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/images/logo/Logo_Dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/images/logo/Logo_Light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/images/pruebas/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/images/pruebas/HARMToHEALTH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/images/pruebas/Imagen Logo Final1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/images/pruebas/Imagen11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/images/pruebas/Logo Final Definitivo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/images/pruebas/Logo Fuente Final.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/images/pruebas/Logo Fuente.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/images/pruebas/Logotipo Aplicación (sin fondo).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/images/pruebas/Logotipo Aplicación.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/images/pruebas/Logotipo Definitivo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/images/pruebas/Logotipo con SOL NEGRO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/Aplicacion/salud/SaludApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/Aplicacion/salud/config/JwtAuthenticationFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/Aplicacion/salud/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/Aplicacion/salud/controller/AuthController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/Aplicacion/salud/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/Aplicacion/salud/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/Aplicacion/salud/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/Aplicacion/salud/service/CustomUserDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/Aplicacion/salud/service/JwtService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/Aplicacion/salud/service/PasswordService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/Aplicacion/salud/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/Aplicacion/salud/util/JwtTokenUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/Aplicacion/salud/SaludApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,32 +92,39 @@
     </option>
   </component>
   <component name="ProjectId" id="2sgFVq5OHaPRZdYfzAbuiHiPvf6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/34638/Documents/Grado Ingeniería Informática -  UAX/4º/Asignaturas/2C/TFG/Back-End/Springboot App/salud/backend",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "6776b3dd95bba354801deda2cb769122"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/34638/Documents/Grado Ingeniería Informática -  UAX/4º/Asignaturas/2C/TFG/Back-End/Springboot App/salud/backend&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;6776b3dd95bba354801deda2cb769122&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\34638\Documents\Grado Ingeniería Informática -  UAX\4º\Asignaturas\2C\TFG\Back-End\Springboot App\salud\backend" />
-    </key>
-  </component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Spring Boot.SaludApplication">
+    <configuration name="SaludApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="salud" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Aplicacion.salud.SaludApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SaludApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
       <module name="salud" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.Aplicacion.salud.SaludApplication" />
       <method v="2">
@@ -102,8 +149,8 @@
       <workItem from="1739265435827" duration="2590000" />
       <workItem from="1739700675804" duration="4043000" />
       <workItem from="1739707612325" duration="5168000" />
-      <workItem from="1739784396503" duration="437000" />
-      <workItem from="1739784855114" duration="386000" />
+      <workItem from="1739785247092" duration="259000" />
+      <workItem from="1739785969316" duration="64000" />
     </task>
     <task id="LOCAL-00001" summary="primer commit">
       <created>1738870008577</created>
@@ -274,11 +321,11 @@
       <updated>1739711697170</updated>
     </task>
     <task id="LOCAL-00025" summary="l">
-      <created>1739784527102</created>
+      <created>1739785291154</created>
       <option name="number" value="00025" />
       <option name="presentableId" value="LOCAL-00025" />
       <option name="project" value="LOCAL" />
-      <updated>1739784527102</updated>
+      <updated>1739785291154</updated>
     </task>
     <option name="localTasksCounter" value="26" />
     <servers />
@@ -298,6 +345,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
     <MESSAGE value="primer commit" />
     <MESSAGE value="2" />
     <MESSAGE value="3" />
