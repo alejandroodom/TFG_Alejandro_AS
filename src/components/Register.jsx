@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { registerUser } from './services/authService';
 
+
 const Register = () => {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
