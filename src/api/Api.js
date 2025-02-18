@@ -15,3 +15,4 @@ fetch(`${API_URL}/auth/register`, {
     .then(response => response.json())
     .then(data => console.log(data))
     .catch(error => console.error(error));
+
