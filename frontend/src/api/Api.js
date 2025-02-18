@@ -1,4 +1,3 @@
-
 const API_URL = import.meta.env.VITE_API_URL; // Backend en Render
 
 fetch(`${API_URL}/auth/register`, {
