@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="996d1e0f-b0f3-42b5-854e-60f8812119ff" name="Changes" comment="c">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2sgFVq5OHaPRZdYfzAbuiHiPvf6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/34638/Documents/Grado Ingeniería Informática -  UAX/4º/Asignaturas/2C/TFG/Back-End/Springboot App/salud",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "spring.configuration.checksum": "6776b3dd95bba354801deda2cb769122"
+  }
+}]]></component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SaludApplication">
+    <configuration name="SaludApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="salud" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Aplicacion.salud.SaludApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaludApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <option name="ALTERNATIVE_JRE_PATH" value="21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="salud" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Aplicacion.salud.SaludApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="996d1e0f-b0f3-42b5-854e-60f8812119ff" name="Changes" comment="" />
+      <created>1738869338332</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1738869338332</updated>
+      <workItem from="1738869339660" duration="2624000" />
+      <workItem from="1738916882008" duration="10500000" />
+      <workItem from="1739006033803" duration="1451000" />
+      <workItem from="1739007515104" duration="5359000" />
+      <workItem from="1739093987734" duration="3025000" />
+      <workItem from="1739180068022" duration="3224000" />
+      <workItem from="1739265435827" duration="2590000" />
+      <workItem from="1739700675804" duration="4043000" />
+      <workItem from="1739707612325" duration="5168000" />
+      <workItem from="1739785247092" duration="259000" />
+      <workItem from="1739785969316" duration="64000" />
+      <workItem from="1739786253716" duration="123000" />
+      <workItem from="1739786414050" duration="759000" />
+    </task>
+    <task id="LOCAL-00001" summary="primer commit">
+      <created>1738870008577</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738870008577</updated>
+    </task>
+    <task id="LOCAL-00002" summary="2">
+      <created>1738870345146</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1738870345146</updated>
+    </task>
+    <task id="LOCAL-00003" summary="2">
+      <created>1738871059089</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738871059089</updated>
+    </task>
+    <task id="LOCAL-00004" summary="2">
+      <created>1738871307834</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1738871307834</updated>
+    </task>
+    <task id="LOCAL-00005" summary="3">
+      <created>1738871384569</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738871384569</updated>
+    </task>
+    <task id="LOCAL-00006" summary="3">
+      <created>1738871506492</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1738871506492</updated>
+    </task>
+    <task id="LOCAL-00007" summary="3">
+      <created>1738871941020</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1738871941020</updated>
+    </task>
+    <task id="LOCAL-00008" summary="b">
+      <created>1738920208474</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738920208474</updated>
+    </task>
+    <task id="LOCAL-00009" summary="5">
+      <created>1738921553853</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738921553853</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Estructura del backend con modelo de usuario establecida y aplicación conectada al cluster.">
+      <created>1739009114921</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1739009114921</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Dockerfile">
+      <created>1739010275209</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1739010275209</updated>
+    </task>
+    <task id="LOCAL-00012" summary="...">
+      <created>1739011134037</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1739011134037</updated>
+    </task>
+    <task id="LOCAL-00013" summary="...">
+      <created>1739011288174</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1739011288174</updated>
+    </task>
+    <task id="LOCAL-00014" summary=".jar en Dockerfile">
+      <created>1739011577726</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1739011577726</updated>
+    </task>
+    <task id="LOCAL-00015" summary="....c">
+      <created>1739011838007</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1739011838008</updated>
+    </task>
+    <task id="LOCAL-00016" summary="wq">
+      <created>1739012764316</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1739012764316</updated>
+    </task>
+    <task id="LOCAL-00017" summary="aaa">
+      <created>1739012906644</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1739012906644</updated>
+    </task>
+    <task id="LOCAL-00018" summary="aaaa">
+      <created>1739013153326</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1739013153326</updated>
+    </task>
+    <task id="LOCAL-00019" summary="aaaa333">
+      <created>1739013261020</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1739013261020</updated>
+    </task>
+    <task id="LOCAL-00020" summary="zzz">
+      <created>1739096233282</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1739096233282</updated>
+    </task>
+    <task id="LOCAL-00021" summary="----">
+      <created>1739097219165</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1739097219165</updated>
+    </task>
+    <task id="LOCAL-00022" summary=",,,">
+      <created>1739201501024</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1739201501024</updated>
+    </task>
+    <task id="LOCAL-00023" summary="campos para el telefono añadidos">
+      <created>1739266123637</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1739266123637</updated>
+    </task>
+    <task id="LOCAL-00024" summary="l">
+      <created>1739711697170</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1739711697170</updated>
+    </task>
+    <task id="LOCAL-00025" summary="l">
+      <created>1739785291154</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1739785291154</updated>
+    </task>
+    <task id="LOCAL-00026" summary="c">
+      <created>1739786319789</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1739786319789</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="primer commit" />
+    <MESSAGE value="2" />
+    <MESSAGE value="3" />
+    <MESSAGE value="b" />
+    <MESSAGE value="5" />
+    <MESSAGE value="Estructura del backend con modelo de usuario establecida y aplicación conectada al cluster." />
+    <MESSAGE value="Dockerfile" />
+    <MESSAGE value="..." />
+    <MESSAGE value=".jar en Dockerfile" />
+    <MESSAGE value="...." />
+    <MESSAGE value="....c" />
+    <MESSAGE value="wq" />
+    <MESSAGE value="aaa" />
+    <MESSAGE value="aaaa" />
+    <MESSAGE value="aaaa333" />
+    <MESSAGE value="zzz" />
+    <MESSAGE value="----" />
+    <MESSAGE value=",,," />
+    <MESSAGE value="campos para el telefono añadidos" />
+    <MESSAGE value="l" />
+    <MESSAGE value="c" />
+    <option name="LAST_COMMIT_MESSAGE" value="c" />
+  </component>
+</project>
