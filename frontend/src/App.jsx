@@ -30,7 +30,7 @@ function App() {
 
     return (
         <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
-            <h1>Pruebao de Registro</h1>
+            <h1>Prueba de Registro</h1>
             <button
                 onClick={handleRegister}
                 style={{
