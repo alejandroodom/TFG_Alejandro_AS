@@ -10,11 +10,11 @@ fetch(`${API_URL}/auth/register`, {
         username: 'ejemplo',
         email: 'ejemplo@mail.com',
         password: '123456'
-
     })
 })
     .then(response => response.json())
     .then(data => console.log(data))
     .catch(error => console.error(error));
+
 
 
