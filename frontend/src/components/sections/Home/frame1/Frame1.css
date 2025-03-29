@@ -1,0 +1,68 @@
+/* Aseguramos que el body no tenga desplazamiento horizontal */
+body {
+    margin: 0;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+
+.frame1 {
+    position: relative;
+    width: 100%;
+    height: calc(100vh); /* Ocupa toda la altura restante de la pantalla */
+
+}
+
+/* La imagen de fondo */
+.background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('./Frame1.svg'); /* Fondo SVG */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Suns {
+    position: absolute;
+    top: 0%; /* Baja la imagen más hacia abajo (ajustar valor según lo que necesites) */
+    left: 38%; /* Centra la imagen horizontalmente */
+    transform: translateX(-50%); /* Ajusta la imagen para que quede centrada */
+    width: 80%; /* Ajusta el tamaño de la imagen (puedes modificar este valor) */
+    z-index: 1;
+}
+
+/* El contenedor de texto, lo ponemos arriba */
+.text-container {
+    position: absolute; /* Coloca el texto sobre el fondo */
+    top: 130px; /* Coloca el texto a 76px desde el header */
+    left: 276px; /* Márgenes a la izquierda */
+    color: #FFFBF2; /* El color del texto */
+}
+
+.frame-text {
+    font-size: 28px; /* Tamaño del texto principal */
+    font-weight: normal; /* Hacemos el texto más destacado */
+    color: #FFFBF2;
+}
+
+.button-container {
+    margin-top: 30px; /* Espacio entre el texto y el botón */
+}
+
+/* Estilos para el botón */
+.start-button {
+    padding: 12px 24px; /* Relleno dentro del botón */
+    font-size: 18px; /* Tamaño del texto en el botón */
+    background-color: #FCF84A; /* Color de fondo del botón (amarillo) */
+    color: #1e1e1e; /* Color del texto en el botón (gris oscuro) */
+    border: none; /* Sin borde */
+    border-radius: 50px; /* Bordes redondeados máximo */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para el botón */
+.start-button:hover {
+    background-color: #00fdb2; /* Color más oscuro del amarillo al pasar el mouse sobre el botón */
+}
+

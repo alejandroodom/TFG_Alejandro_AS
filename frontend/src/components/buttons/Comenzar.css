@@ -1,0 +1,27 @@
+.start-button {
+    width: 192px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    background-color: #FCF84A; /* Color de fondo inicial */
+    color: #1e1e1e; /* Color del texto inicial */
+    font-family: 'Inter', sans-serif; /* Fuente Inter */
+    font-weight: 400; /* Regular */
+    font-size: 21px; /* Tamaño del texto */
+    text-align: center; /* Centra el texto horizontalmente */
+    line-height: 60px; /* Centra el texto verticalmente */
+    border-radius: 30px; /* Bordes redondeados al máximo */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Muestra el cursor pointer cuando el ratón pasa sobre el botón */
+    transition: background 1.6s linear, color 1.6s linear; /* Transición suave para el hover */
+    display: flex;
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    margin-top: 50px; /* Espacio de 48px entre el botón y el texto arriba */
+}
+
+/* Efecto hover */
+.start-button:hover {
+    background: linear-gradient(160deg, #FF318C, #FCF84A); /* Degradado de color */
+    color: #FFFBF2; /* Cambia el color del texto al pasar el ratón */
+    transition: background 1.6s linear, color 1.6s linear; /* Transición de hover */
+}
+
