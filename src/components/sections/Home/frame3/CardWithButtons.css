@@ -1,0 +1,117 @@
+/* Estilos para el contenedor de la tarjeta */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tarjeta principal */
+.card {
+    background-color: #000000;
+    border-radius: 32px;
+    width: 985px;
+    height: 775px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Grid de botones */
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 100px;
+    width: 80%;
+}
+
+/* Estilo base para los botones */
+.button {
+    background-color: #2e2e2e; /* Color gris oscuro */
+    border: none;
+    border-radius: 16px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Estilo para el botón activo */
+.button.active {
+    background: linear-gradient(45deg, #ff3366, #ff00ff); /* Gradiente rosa */
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+}
+
+/* Estilo base para los iconos */
+.icon {
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(318deg) brightness(91%) contrast(119%);
+}
+
+/* Estilos para la tarjeta de información */
+.info-card {
+    background-color: #000000;
+    border: 1px solid #FFFBF2;
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 40px;
+    color: white;
+    transition: all 0.3s ease;
+    animation: fadeIn 0.3s ease-in-out;
+    width: 300px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aquí deberías añadir tus iconos personalizados */
+/* Por ejemplo: */
+.sun-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>');
+}
+
+.donut-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>');
+}
+
+.tree-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,2L4,12H9V20h6V12h5L12,2z"/></svg>');
+}
+
+.drop-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,2.69L17.66,8.35C18.78,9.47,19.34,11,19.34,12.35C19.34,15.84,16.22,18.69,12,18.69C7.78,18.69,4.66,15.84,4.66,12.35C4.66,11,5.22,9.47,6.34,8.35L12,2.69z"/></svg>');
+}
+
+.moon-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9,2C5.14,2,2,5.14,2,9c0,3.86,3.14,7,7,7c3.86,0,7-3.14,7-7C16,5.14,12.86,2,9,2z"/></svg>');
+}
+
+.dumbbell-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6,5H4v14h2V5z M20,5h-2v14h2V5z M15,5h-2v14h2V5z M10,5H8v14h2V5z"/></svg>');
+}
+
+.brain-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9S16.97,3,12,3z M12,19c-3.86,0-7-3.14-7-7s3.14-7,7-7s7,3.14,7,7S15.86,19,12,19z"/></svg>');
+}
+
+.hourglass-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18,2H6v6l4,4l-4,4v6h12v-6l-4-4l4-4V2z"/></svg>');
+}

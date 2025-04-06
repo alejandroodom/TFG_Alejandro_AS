@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+
+.frame3 {
+    background-color: #1e1e1e;
+    position: relative;
+    width: 100%;
+    height: calc(100vh); /* Ocupa toda la altura restante de la pantalla */
+    padding-top: 100px; /* Reemplaza el margin-top de la tarjeta */
+
+}
+
