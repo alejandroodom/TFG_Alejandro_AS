@@ -4,17 +4,18 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "frontend/frontend/node_modules/.bin/vite",
-    "build": "frontend/frontend/node_modules/.bin/vite build",
-    "lint": "frontend/frontend/node_modules/.bin/eslint .",
-    "preview": "frontend/frontend/node_modules/.bin/vite preview"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "node_modules/.bin/eslint .",
+    "preview": "node_modules/.bin/vite preview"
   },
   "dependencies": {
+    "@fontsource/inter": "^5.2.5",
+    "lucide-react": "^0.513.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "@fontsource/inter": "^5.2.5"
-},
-
+    "react-router-dom": "^7.5.0"
+  },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
     "@types/react": "^19.0.8",
