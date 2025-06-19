@@ -1,126 +1,66 @@
 package com.Aplicacion.salud.model;
 
-import jakarta.validation.constraints.Pattern;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
-import java.time.LocalDate;
+import org.springframework.data.mongodb.core.index.Indexed;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 import java.time.LocalDateTime;
 
 
 @Document(collection = "users")
 public class User {
-
     @Id
-    private String Id;
-    @NotNull
-    private String username;
-    @NotNull
-    @Email
-    private String email;
-    @NotNull
-    @Size(min = 8)
-    private String password;
-    private boolean phoneVerified;
-    @Pattern(regexp = "^\\+[1-9]\\d{1,14}$", message = "Formato no válido. Introduzca un número de teléfono válido.")
-    private String phoneNumber;
-    private String phoneVerificationCode;
-    private LocalDateTime verificationExpiry;
+    private String id;
 
-    private String sex;
-    private LocalDate birthdate;
-    private String country;
+    @NotBlank
+    @Size(max = 50)
+    private String username;
+
+    @NotBlank
+    @Size(max = 100)
+    @Email
+    @Indexed(unique = true)
+    private String email;
+
+    @NotBlank
+    @Size(min = 6, max = 100)
+    private String password;
+
+    private LocalDateTime createdAt;
+
+    private UserData userData;
 
 
     public User() {
+        this.createdAt = LocalDateTime.now();
     }
 
-    public String getId() {
-        return Id;
-    }
-
-    public void setId(String Id) {
-        this.Id = Id;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
+    public User(String username, String email, String password) {
         this.username = username;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
         this.password = password;
+        this.createdAt = LocalDateTime.now();
     }
 
-    public String getSex() {
-        return sex;
-    }
+    // Getters y Setters
+    public String getId() { return id; }
+    public void setId(String id) { this.id = id; }
 
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
+    public String getUsername() { return username; }
+    public void setUsername(String username) { this.username = username; }
 
-    public LocalDate getBirthdate() {
-        return birthdate;
-    }
+    public String getEmail() { return email; }
+    public void setEmail(String email) { this.email = email; }
 
-    public void setBirthdate(LocalDate birthdate) {
-        this.birthdate = birthdate;
-    }
+    public String getPassword() { return password; }
+    public void setPassword(String password) { this.password = password; }
 
-    public String getCountry() {
-        return country;
-    }
+    public LocalDateTime getCreatedAt() { return createdAt; }
+    public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }
 
-    public void setCountry(String country) {
-        this.country = country;
-    }
-    public boolean isPhoneVerified() {
-        return phoneVerified;
-    }
+    public UserData getUserData() { return userData; }
+    public void setUserData(UserData userData) { this.userData = userData; }
 
-    public void setPhoneVerified(boolean phoneVerified) {
-        this.phoneVerified = phoneVerified;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public String getPhoneVerificationCode() {
-        return phoneVerificationCode;
-    }
-
-    public void setPhoneVerificationCode(String phoneVerificationCode) {
-        this.phoneVerificationCode = phoneVerificationCode;
-    }
-
-    public LocalDateTime getVerificationExpiry() {
-        return verificationExpiry;
-    }
-
-    public void setVerificationExpiry(LocalDateTime verificationExpiry) {
-        this.verificationExpiry = verificationExpiry;
-    }
 }
