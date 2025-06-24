@@ -107,7 +107,6 @@ body {
 }
 
 
-
 .rounded-box{
     border-radius: 4px;
 }
@@ -116,7 +115,6 @@ body {
 .rounded-full {
   border-radius: 9999px;
 }
-
 
 .s1 {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
@@ -221,8 +219,6 @@ body {
 .pbt{
   padding-bottom: 6rem;
 }
-
-
 
 .mt1 > * + * {
   margin-top: 0.75rem;
@@ -398,9 +394,13 @@ body {
 }
 
 .bgfo{
-    background: linear-gradient(360deg, #ff318c, #fffbf2);
-  padding-right: 35rem;
-  padding-left: 35rem;
+    background: url("Frame 111.svg");
+    max-width: 96rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200% 200%;
+    padding-right: 35rem;
+    padding-left: 35rem;
 }
 
 
@@ -525,7 +525,6 @@ button:active {
   transform: translateY(0);
 }
 
-
 .blc:hover {
   background-color: #2e2e2e;
 }
@@ -559,11 +558,6 @@ button:active {
     border-radius: 40rem;
 }
 
-
-
-
-
-
 .inline-flex {
   display: inline-flex;
 }
@@ -580,7 +574,7 @@ nav {
 
 
 
-.LOGO{
+.LOGO {
   background-image: url('/src/SLOGO.svg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -595,7 +589,7 @@ nav {
     background-color: #1e1e1e;
 }
 
-.dataform{
+.dataform {
     width: 100%;
     margin: 0 auto;
   padding-right: 19rem;

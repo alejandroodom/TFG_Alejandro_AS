@@ -13,6 +13,8 @@ const useAuth = () => {
     return context;
 };
 
+
+
 //Proveedor de autenticación
 // eslint-disable-next-line react/prop-types
 const AuthProvider = ({ children }) => {
@@ -91,6 +93,7 @@ const AuthProvider = ({ children }) => {
     const register = async (username, email, password) => {
 
         try {
+            //Realiza la petición al backend para registrar un nuevo usuario
             const response = await fetch('http://localhost:8080/api/auth/signup', {
                 method: 'POST',
                 headers: {
@@ -171,7 +174,7 @@ const LoginForm = ({ onToggleForm }) => {
     const [loading, setLoading] = useState(false);
     const { login } = useAuth();
 
-
+    //Función para el envío del formulario de inicio de sesión
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
@@ -230,6 +233,7 @@ const LoginForm = ({ onToggleForm }) => {
                                 className="colorbox wide100 pl1 pr12 ptb1 border borderblc rounded-box"
                                 placeholder="Tu contraseña"
                             />
+
                             <span
                                 onClick={() => setShowPassword(!showPassword)}
                                 className="absolute right1 top1  text-gray1 "
@@ -265,7 +269,6 @@ const LoginForm = ({ onToggleForm }) => {
                             Regístrate
                         </span>
 
-
                     </p>
                 </div>
             </form>
@@ -288,7 +291,7 @@ const RegisterForm = ({ onToggleForm }) => {
     const [loading, setLoading] = useState(false);
     const { register } = useAuth();
 
-
+    //Función para  el envío del formulario de registro
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
@@ -456,6 +459,7 @@ const RegisterForm = ({ onToggleForm }) => {
 
 //Componente perfil usuario
 const Dashboard = () => {
+
     const { user, logout, goToUserDataForm } = useAuth();
 
     return (
@@ -463,7 +467,6 @@ const Dashboard = () => {
             <nav className="bg-white s2">
                 <div className="mwte3 mx-auto prl1">
                     <div className="flex jb h5 ic">
-                        {/* Logo con clase HH */}
                         <div className="flex ic">
                             <div className="HH" />
                         </div>
@@ -530,6 +533,7 @@ const Dashboard = () => {
 
 //Componente formulario
 const UserDataForm = () => {
+
     const [formData, setFormData] = useState({
         sexo: '',
         edad: '',
@@ -537,10 +541,12 @@ const UserDataForm = () => {
         altura: '',
         objetivo: ''
     });
+
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
     const { user, token, goToPlan } = useAuth();
 
+    //Objetivos
     const objetivos = [
         { value: 'bajar_peso', label: 'Bajar de peso' },
         { value: 'aumentar_musculo', label: 'Aumentar masa muscular' },
@@ -556,7 +562,9 @@ const UserDataForm = () => {
         }));
     };
 
+    //Función para validar el formulario
     const validateForm = () => {
+
         if (!formData.sexo || !formData.edad || !formData.peso || !formData.altura || !formData.objetivo) {
             setError('Todos los campos son obligatorios');
             return false;
@@ -565,6 +573,7 @@ const UserDataForm = () => {
         const edad = parseInt(formData.edad);
         const peso = parseFloat(formData.peso);
         const altura = parseFloat(formData.altura);
+
 
         if (edad < 16 || edad > 99) {
             setError('La edad debe estar entre 16 y 99 años');
@@ -576,6 +585,7 @@ const UserDataForm = () => {
             return false;
         }
 
+
         if (altura < 120 || altura > 250) {
             setError('La altura debe estar entre 120 y 250 cm');
             return false;
@@ -584,15 +594,17 @@ const UserDataForm = () => {
         return true;
     };
 
+    //Función para el envío del formulario
     const handleSubmit = async (e) => {
+
         e.preventDefault();
         setError('');
-
         if (!validateForm()) {
             return;
         }
 
         setLoading(true);
+
 
         try {
             console.log('Datos del formulario:', {
@@ -603,6 +615,8 @@ const UserDataForm = () => {
                 altura: parseFloat(formData.altura)
             });
 
+
+            //Realiza la petición al backend para guardar los datos del usuario
             const response = await fetch('http://localhost:8080/api/user/data', {
                 method: 'POST',
                 headers: {
@@ -619,6 +633,7 @@ const UserDataForm = () => {
             });
 
             const data = await response.json();
+
 
             if (response.ok) {
 
@@ -637,6 +652,7 @@ const UserDataForm = () => {
 
         setLoading(false);
     };
+
 
     return (
         <div className="bgfo minh   flex ic jc ptb2">
@@ -738,6 +754,7 @@ const UserDataForm = () => {
                         </select>
                     </div>
 
+
                     {error && (
                         <div className="bgr border border-red text-red prl1 ptb1">
                             {error}
@@ -752,7 +769,6 @@ const UserDataForm = () => {
                         {loading ? 'Generando tu plan...' : 'Crear Mi Plan Personalizado'}
                     </button>
                 </form>
-
 
             </div>
         </div>
@@ -773,8 +789,10 @@ const PlanView = () => {
         fetchUserPlan();
     }, []);
 
+    //Función para obtener el plan del usuario
     const fetchUserPlan = async () => {
         try {
+            //Realiza la petición al backend para obtener el plan del usuario
             const response = await fetch(`http://localhost:8080/api/user/plan/${user.id}`, {
                 method: 'GET',
                 headers: {
@@ -783,22 +801,24 @@ const PlanView = () => {
             });
 
             const data = await response.json();
-
             if (response.ok) {
                 setPlanData(data);
             } else {
                 setError(data.message || 'Error al cargar el plan');
             }
+
         } catch (err) {
             console.error('Error:', err);
             setError('Error de conexión');
         }
+
         setLoading(false);
     };
 
     if (loading) {
         return <LoadingSpinner />;
     }
+
 
     if (error) {
         return (
@@ -915,6 +935,7 @@ const PlanView = () => {
                             </div>
                         </div>
                     )}
+
                 </div>
             </main>
         </div>
@@ -968,7 +989,6 @@ const App = () => {
 
 
 };
-
 
 
 export default function AuthApp() {
