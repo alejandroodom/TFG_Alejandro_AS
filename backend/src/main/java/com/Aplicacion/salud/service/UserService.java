@@ -9,13 +9,14 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+//package com.Aplicacion.salud.service;
 @Service
 public class UserService {
 
     @Autowired
     private UserRepository userRepository;
 
-    private PasswordEncoder passwordEncoder;  // Para encriptar la contraseña
+    private PasswordEncoder passwordEncoder;    //encripta la contraseña
 
     public User registerUser(String username, String password) {
         User user = new User();

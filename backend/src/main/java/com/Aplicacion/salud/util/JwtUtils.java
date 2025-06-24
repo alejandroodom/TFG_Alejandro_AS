@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 import java.security.Key;
 import java.util.Date;
 
+//package com.Aplicacion.salud.util;
 @Component
 public class JwtUtils {
 
@@ -21,6 +22,7 @@ public class JwtUtils {
     }
 
     public String generateJwtToken(String email) {
+
         return Jwts.builder()
                 .setSubject(email)
                 .setIssuedAt(new Date())
@@ -30,6 +32,7 @@ public class JwtUtils {
     }
 
     public String getEmailFromJwtToken(String token) {
+
         return Jwts.parserBuilder()
                 .setSigningKey(getSigningKey())
                 .build()
@@ -39,6 +42,7 @@ public class JwtUtils {
     }
 
     public boolean validateJwtToken(String authToken) {
+
         try {
             Jwts.parserBuilder().setSigningKey(getSigningKey()).build().parseClaimsJws(authToken);
             return true;
@@ -51,6 +55,7 @@ public class JwtUtils {
         } catch (IllegalArgumentException e) {
             System.err.println("JWT claims string is empty: " + e.getMessage());
         }
+
         return false;
     }
 }

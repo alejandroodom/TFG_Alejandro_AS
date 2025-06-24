@@ -3,14 +3,13 @@ package com.Aplicacion.salud.util;
 import java.util.ArrayList;
 import java.util.List;
 
+//package com.Aplicacion.salud.util;
 public class PlanResponse {
-    // Plan Nutricional
-    private PlanNutricional planNutricional;
 
-    // Plan de Entrenamiento
+
+    private PlanNutricional planNutricional;
     private PlanEntrenamiento planEntrenamiento;
 
-    // Información del usuario
     private Double imc;
     private String categoriaIMC;
     private String objetivoTexto;
@@ -43,7 +42,7 @@ public class PlanResponse {
 
 
 
-    // Clase interna para Plan Nutricional
+    //Clase para el Plan Nutricional
     public static class PlanNutricional {
         private String tipoDieta;
         private String comidasPorDia;
@@ -59,7 +58,7 @@ public class PlanResponse {
         public void setDescripcion(String descripcion) { this.descripcion = descripcion; }
     }
 
-    // Clase interna para Plan de Entrenamiento
+    //Clase para el Plan de Entrenamiento
     public static class PlanEntrenamiento {
         private String tipo;
         private String intensidad;
@@ -75,7 +74,6 @@ public class PlanResponse {
         public void setDescripcion(String descripcion) { this.descripcion = descripcion; }
     }
 
-    // Getters y Setters
     public PlanNutricional getPlanNutricional() { return planNutricional; }
     public void setPlanNutricional(PlanNutricional planNutricional) { this.planNutricional = planNutricional; }
 

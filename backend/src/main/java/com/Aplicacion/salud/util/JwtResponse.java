@@ -1,5 +1,6 @@
 package com.Aplicacion.salud.util;
 
+//package com.Aplicacion.salud.util;
 public class JwtResponse {
     private String token;
     private String type = "Bearer";

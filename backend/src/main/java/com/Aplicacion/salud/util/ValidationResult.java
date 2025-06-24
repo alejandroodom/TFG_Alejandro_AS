@@ -3,6 +3,7 @@ package com.Aplicacion.salud.util;
 import java.util.List;
 import java.util.ArrayList;
 
+//package com.Aplicacion.salud.util;
 public class ValidationResult {
     private boolean valid;
     private boolean requiresMedicalConsultation;
@@ -23,7 +24,7 @@ public class ValidationResult {
         this.message = message;
     }
 
-    // Getters y Setters
+    //Getters y Setters
     public boolean isValid() { return valid; }
     public void setValid(boolean valid) { this.valid = valid; }
 

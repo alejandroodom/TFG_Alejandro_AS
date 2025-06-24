@@ -9,6 +9,7 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+//package com.Aplicacion.salud.config;
 @Configuration
 public class UserDetailsServiceConfig {
 

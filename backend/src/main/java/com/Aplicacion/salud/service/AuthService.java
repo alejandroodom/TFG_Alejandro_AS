@@ -14,18 +14,18 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import java.util.Optional;
 
+//package com.Aplicacion.salud.service;
 @Service
 public class AuthService {
 
     @Autowired
     UserRepository userRepository;
-
     @Autowired
     PasswordEncoder encoder;
-
     @Autowired
     JwtUtils jwtUtils;
 
+    //Método para autenticar al usuario
     public JwtResponse authenticateUser(LoginRequest loginRequest) {
         Optional<User> userOptional = userRepository.findByEmail(loginRequest.getEmail());
 
@@ -44,7 +44,9 @@ public class AuthService {
         return new JwtResponse(jwt, user.getId(), user.getUsername(), user.getEmail());
     }
 
+    //Método para registrar un nuevo usuario
     public MessageResponse registerUser(RegisterRequest signUpRequest) {
+
         if (userRepository.existsByEmail(signUpRequest.getEmail())) {
             throw new RuntimeException("El email ya está en uso");
         }
@@ -53,7 +55,7 @@ public class AuthService {
             throw new RuntimeException("El nombre de usuario ya está en uso");
         }
 
-        // Crear nueva cuenta de usuario
+        //Crear nueva cuenta de usuario
         User user = new User(signUpRequest.getUsername(),
                 signUpRequest.getEmail(),
                 encoder.encode(signUpRequest.getPassword()));
@@ -63,6 +65,7 @@ public class AuthService {
         return new MessageResponse("Usuario registrado exitosamente");
     }
 
+    //Método para obtener el perfil del usuario
     public Object getUserProfile(String jwt) {
         if (!jwtUtils.validateJwtToken(jwt)) {
             throw new RuntimeException("Token inválido");

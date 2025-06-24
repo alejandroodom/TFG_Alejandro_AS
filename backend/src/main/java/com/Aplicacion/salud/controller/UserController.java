@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
+//package com.Aplicacion.salud.controller;
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("/api/user")
@@ -26,22 +27,19 @@ public class UserController {
 
     @PostMapping("/data")
     public ResponseEntity<?> saveUserData(@Valid @RequestBody UserDataRequest request) {
+
         try {
             String userId = request.getUserId();
-
             Optional<UserData> existingData = userDataRepository.findByUserId(userId);
-
             UserData userData;
+
             if (existingData.isPresent()) {
-
-
                 userData = existingData.get();
                 userData.setSexo(request.getSexo());
                 userData.setEdad(request.getEdad());
                 userData.setPeso(request.getPeso());
                 userData.setAltura(request.getAltura());
                 userData.setObjetivo(request.getObjetivo());
-
             } else {
 
                 userData = new UserData(
@@ -55,7 +53,6 @@ public class UserController {
             }
 
             userDataRepository.save(userData);
-
             return ResponseEntity.ok(new MessageResponse("Datos guardados exitosamente"));
 
         } catch (Exception e) {
@@ -63,9 +60,6 @@ public class UserController {
                     .body(new MessageResponse("Error: " + e.getMessage()));
         }
     }
-
-
-
 
     @GetMapping("/plan/{userId}")
     public ResponseEntity<?> getUserPlan(@PathVariable String userId) {

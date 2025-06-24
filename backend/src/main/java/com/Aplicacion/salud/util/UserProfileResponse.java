@@ -1,5 +1,6 @@
 package com.Aplicacion.salud.util;
 
+//package com.Aplicacion.salud.util;
 public class UserProfileResponse {
     private String id;
     private String username;

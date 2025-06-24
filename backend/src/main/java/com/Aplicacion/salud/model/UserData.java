@@ -12,39 +12,33 @@ import jakarta.validation.constraints.DecimalMax;
 
 import java.time.LocalDateTime;
 
+//package com.Aplicacion.salud.model;
 @Document(collection = "user_data")
 public class UserData {
     @Id
     private String id;
-
     @NotBlank
     @Indexed(unique = true)
-    private String userId; // Referencia al ID del usuario
-
+    private String userId;
     @NotBlank
-    private String sexo; // "hombre" o "mujer"
-
+    private String sexo;
     @NotNull
     @Min(16)
     @Max(99)
     private Integer edad;
-
     @NotNull
     @DecimalMin("30.0")
     @DecimalMax("300.0")
-    private Double peso; // en kg
-
+    private Double peso;
     @NotNull
     @DecimalMin("120.0")
     @DecimalMax("250.0")
-    private Double altura; // en cm
-
+    private Double altura;  //en cm
     @NotBlank
-    private String objetivo; // "bajar_peso", "aumentar_musculo", "revertir_condicion", "mejorar_salud"
-
-    private Double imc; // Calculado automáticamente
-    private String categoriaIMC; // "bajo", "normal", "sobrepeso", "obesidad"
-    private String rangoEdad; // "16-30", "30-45", "45-60", "60+"
+    private String objetivo;
+    private Double imc;
+    private String categoriaIMC;
+    private String rangoEdad;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
@@ -54,6 +48,7 @@ public class UserData {
     }
 
     public UserData(String userId, String sexo, Integer edad, Double peso, Double altura, String objetivo) {
+
         this.userId = userId;
         this.sexo = sexo;
         this.edad = edad;
@@ -68,7 +63,7 @@ public class UserData {
         this.categorizeAge();
     }
 
-    // Calcular IMC
+    //Calcular IMC
     public void calculateIMC() {
         if (peso != null && altura != null) {
             double alturaEnMetros = altura / 100.0;
@@ -77,7 +72,7 @@ public class UserData {
         }
     }
 
-    // Categorizar IMC
+    //Categorizar el IMC
     public void categorizeIMC() {
         if (imc != null) {
             if (imc < 18.5) {
@@ -92,7 +87,7 @@ public class UserData {
         }
     }
 
-    // Categorizar edad
+    //Categorizar el rango de edad
     public void categorizeAge() {
         if (edad != null) {
             if (edad < 25) {
@@ -107,7 +102,6 @@ public class UserData {
         }
     }
 
-    // Getters y Setters
     public String getId() { return id; }
     public void setId(String id) { this.id = id; }
 

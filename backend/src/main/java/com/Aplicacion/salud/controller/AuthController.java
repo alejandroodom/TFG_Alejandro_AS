@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 
+//package com.Aplicacion.salud.controller;
 @CrossOrigin(origins = "http://localhost:3000", maxAge = 3600)
 @RestController
 @RequestMapping("/api/auth")
@@ -21,6 +22,7 @@ public class AuthController {
 
     @PostMapping("/signin")
     public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
+
         try {
             JwtResponse jwtResponse = authService.authenticateUser(loginRequest);
             return ResponseEntity.ok(jwtResponse);
@@ -32,9 +34,11 @@ public class AuthController {
 
     @PostMapping("/signup")
     public ResponseEntity<?> registerUser(@Valid @RequestBody RegisterRequest signUpRequest) {
+
         try {
             MessageResponse response = authService.registerUser(signUpRequest);
             return ResponseEntity.ok(response);
+
         } catch (RuntimeException e) {
             return ResponseEntity.badRequest()
                     .body(new MessageResponse("Error: " + e.getMessage()));
@@ -43,10 +47,12 @@ public class AuthController {
 
     @GetMapping("/user")
     public ResponseEntity<?> getUserProfile(@RequestHeader("Authorization") String token) {
+
         try {
             String jwt = token.substring(7);
             Object userProfile = authService.getUserProfile(jwt);
             return ResponseEntity.ok(userProfile);
+
         } catch (RuntimeException e) {
             return ResponseEntity.badRequest()
                     .body(new MessageResponse("Error: " + e.getMessage()));

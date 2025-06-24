@@ -6,14 +6,15 @@ import com.Aplicacion.salud.util.ValidationResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+//package com.Aplicacion.salud.service;
 @Service
 public class PlanService {
 
     @Autowired
     private MedicalValidationService medicalValidationService;
     public PlanResponse generarPlan(UserData userData) {
-        PlanResponse plan = new PlanResponse();
 
+        PlanResponse plan = new PlanResponse();
 
         ValidationResult validation = medicalValidationService.validateUserGoal(userData);
 
@@ -23,7 +24,6 @@ public class PlanService {
             return plan;
         }
 
-        // Usar los datos ya calculados en UserData
         plan.setImc(userData.getImc());
         plan.setCategoriaIMC(userData.getCategoriaIMC());
         plan.setGrupoEdad(userData.getRangoEdad());
@@ -34,14 +34,15 @@ public class PlanService {
         plan.setRecommendations(validation.getRecommendations());
         plan.setRequiresMedicalConsultation(validation.isRequiresMedicalConsultation());
 
-        // Generar planes (modificados según validaciones)
         generarPlanNutricional(plan, userData);
         generarPlanEntrenamiento(plan, userData);
 
         return plan;
     }
 
+    //Método para generar un plan alternativo en caso de que la validación falle
     private PlanResponse generarPlanAlternativo(UserData userData, ValidationResult validation) {
+
         PlanResponse plan = new PlanResponse();
 
         plan.setImc(userData.getImc());
@@ -49,7 +50,6 @@ public class PlanService {
         plan.setGrupoEdad(userData.getRangoEdad());
         plan.setObjetivoTexto("PLAN MODIFICADO POR SEGURIDAD");
 
-        // Plan seguro alternativo
         PlanResponse.PlanNutricional planNut = plan.getPlanNutricional();
         planNut.setTipoDieta("Consulta médica requerida");
         planNut.setComidasPorDia("A determinar por profesional");
@@ -78,7 +78,9 @@ public class PlanService {
         }
     }
 
+    //Generación de planes nutricionales
     private void generarPlanNutricional(PlanResponse plan, UserData userData) {
+
         String objetivo = userData.getObjetivo();
         PlanResponse.PlanNutricional planNut = plan.getPlanNutricional();
 
@@ -105,12 +107,14 @@ public class PlanService {
         }
     }
 
+    //Generación de planes de entrenamiento
     private void generarPlanEntrenamiento(PlanResponse plan, UserData userData) {
+
         String objetivo = userData.getObjetivo();
         int edad = userData.getEdad();
         PlanResponse.PlanEntrenamiento planEnt = plan.getPlanEntrenamiento();
 
-        // Ajustar intensidad según edad
+        //Ajustar intensidad según edad
         String intensidadBase = edad < 30 ? "Alta" : edad < 50 ? "Moderada-Alta" : "Moderada";
 
         switch (objetivo) {

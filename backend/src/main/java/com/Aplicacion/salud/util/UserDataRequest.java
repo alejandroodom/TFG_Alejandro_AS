@@ -2,35 +2,30 @@ package com.Aplicacion.salud.util;
 
 import jakarta.validation.constraints.*;
 
+//package com.Aplicacion.salud.util;
 public class UserDataRequest {
     @NotNull
     private String userId;
-
     @NotBlank
     private String sexo;
-
     @NotNull
     @Min(16)
     @Max(99)
     private Integer edad;
-
     @NotNull
     @DecimalMin("30.0")
     @DecimalMax("300.0")
     private Double peso;
-
     @NotNull
     @DecimalMin("120.0")
     @DecimalMax("250.0")
     private Double altura;
-
     @NotBlank
     private String objetivo;
 
-    // Constructores
-    public UserDataRequest() {}
+    public UserDataRequest() {
+    }
 
-    // Getters y Setters
     public String getUserId() { return userId; }
     public void setUserId(String userId) { this.userId = userId; }
     public String getSexo() { return sexo; }

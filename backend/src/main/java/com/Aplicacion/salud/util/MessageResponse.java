@@ -1,5 +1,6 @@
 package com.Aplicacion.salud.util;
 
+//package com.Aplicacion.salud.util;
 public class MessageResponse {
     private String message;
 

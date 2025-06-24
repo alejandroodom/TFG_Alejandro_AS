@@ -8,28 +8,23 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import java.time.LocalDateTime;
 
-
+//package com.Aplicacion.salud.model;
 @Document(collection = "users")
 public class User {
     @Id
     private String id;
-
     @NotBlank
     @Size(max = 50)
     private String username;
-
     @NotBlank
     @Size(max = 100)
     @Email
     @Indexed(unique = true)
     private String email;
-
     @NotBlank
     @Size(min = 6, max = 100)
     private String password;
-
     private LocalDateTime createdAt;
-
     private UserData userData;
 
 
@@ -44,7 +39,6 @@ public class User {
         this.createdAt = LocalDateTime.now();
     }
 
-    // Getters y Setters
     public String getId() { return id; }
     public void setId(String id) { this.id = id; }
 
@@ -62,5 +56,4 @@ public class User {
 
     public UserData getUserData() { return userData; }
     public void setUserData(UserData userData) { this.userData = userData; }
-
 }
