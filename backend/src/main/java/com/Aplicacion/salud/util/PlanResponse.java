@@ -1,11 +1,11 @@
 package com.Aplicacion.salud.util;
 
+import com.Aplicacion.salud.model.UserData;
 import java.util.ArrayList;
 import java.util.List;
 
 //package com.Aplicacion.salud.util;
 public class PlanResponse {
-
 
     private PlanNutricional planNutricional;
     private PlanEntrenamiento planEntrenamiento;
@@ -18,6 +18,7 @@ public class PlanResponse {
     private List<String> warnings;
     private List<String> recommendations;
     private boolean requiresMedicalConsultation;
+    private UserData userData;
 
     public PlanResponse() {
         this.planNutricional = new PlanNutricional();
@@ -25,6 +26,9 @@ public class PlanResponse {
         this.warnings = new ArrayList<>();
         this.recommendations = new ArrayList<>();
     }
+
+    public UserData getUserData() { return userData; }
+    public void setUserData(UserData userData) { this.userData = userData; }
 
     public String getValidationSummary() { return validationSummary; }
     public void setValidationSummary(String validationSummary) { this.validationSummary = validationSummary; }
@@ -39,8 +43,6 @@ public class PlanResponse {
     public void setRequiresMedicalConsultation(boolean requiresMedicalConsultation) {
         this.requiresMedicalConsultation = requiresMedicalConsultation;
     }
-
-
 
     //Clase para el Plan Nutricional
     public static class PlanNutricional {

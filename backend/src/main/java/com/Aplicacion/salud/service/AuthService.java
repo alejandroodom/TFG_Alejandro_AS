@@ -5,6 +5,7 @@ import com.Aplicacion.salud.LoginRequest;
 import com.Aplicacion.salud.RegisterRequest;
 import com.Aplicacion.salud.model.User;
 import com.Aplicacion.salud.repository.UserRepository;
+import com.Aplicacion.salud.repository.UserDataRepository;
 import com.Aplicacion.salud.util.JwtResponse;
 import com.Aplicacion.salud.util.JwtUtils;
 import com.Aplicacion.salud.util.MessageResponse;
@@ -20,33 +21,46 @@ public class AuthService {
 
     @Autowired
     UserRepository userRepository;
+
+    @Autowired
+    UserDataRepository userDataRepository;
+
     @Autowired
     PasswordEncoder encoder;
+
     @Autowired
     JwtUtils jwtUtils;
 
     //Método para autenticar al usuario
     public JwtResponse authenticateUser(LoginRequest loginRequest) {
+
         Optional<User> userOptional = userRepository.findByEmail(loginRequest.getEmail());
 
         if (!userOptional.isPresent()) {
             throw new RuntimeException("Usuario no encontrado");
         }
-
         User user = userOptional.get();
 
         if (!encoder.matches(loginRequest.getPassword(), user.getPassword())) {
             throw new RuntimeException("Contraseña incorrecta");
         }
 
+
         String jwt = jwtUtils.generateJwtToken(user.getEmail());
 
-        return new JwtResponse(jwt, user.getId(), user.getUsername(), user.getEmail());
+        boolean hasHealthData = hasHealthData(user.getId());
+
+
+        return new JwtResponse(jwt, user.getId(), user.getUsername(), user.getEmail(), hasHealthData);
+    }
+
+    //Método para verificar si el usuario tiene datos de salud
+    public boolean hasHealthData(String userId) {
+        return userDataRepository.existsByUserId(userId);
     }
 
     //Método para registrar un nuevo usuario
     public MessageResponse registerUser(RegisterRequest signUpRequest) {
-
         if (userRepository.existsByEmail(signUpRequest.getEmail())) {
             throw new RuntimeException("El email ya está en uso");
         }

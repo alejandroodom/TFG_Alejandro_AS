@@ -33,7 +33,7 @@ public class MedicalValidationService {
     private void validateWeightLossGoal(ValidationResult result, double imc, int edad, String sexo, UserData userData) {
         if (imc < 18.5) {
             result.setValid(false);
-            result.setMessage("NO SE RECOMIENDA bajar de peso con un IMC de " + String.format("%.1f", imc) + " (Bajo peso).");
+            result.setMessage("Por su seguridad, consulte con un médico antes de iniciar cualquier programa de alimentación.");
             result.addWarning("Su objetivo actual puede ser perjudicial para su salud.");
             result.addRecommendation("Se recomienda cambiar el objetivo a 'Aumentar masa muscular'.");
             result.addRecommendation("Enfoque en nutrición para ganar peso saludablemente.");

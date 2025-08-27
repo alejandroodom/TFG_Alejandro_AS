@@ -1,18 +1,27 @@
 package com.Aplicacion.salud.util;
 
-//package com.Aplicacion.salud.util;
 public class JwtResponse {
     private String token;
     private String type = "Bearer";
     private String id;
     private String username;
     private String email;
+    private boolean hasHealthData;
 
     public JwtResponse(String accessToken, String id, String username, String email) {
         this.token = accessToken;
         this.id = id;
         this.username = username;
         this.email = email;
+        this.hasHealthData = false;
+    }
+
+    public JwtResponse(String accessToken, String id, String username, String email, boolean hasHealthData) {
+        this.token = accessToken;
+        this.id = id;
+        this.username = username;
+        this.email = email;
+        this.hasHealthData = hasHealthData;
     }
 
     public String getAccessToken() { return token; }
@@ -29,4 +38,7 @@ public class JwtResponse {
 
     public String getEmail() { return email; }
     public void setEmail(String email) { this.email = email; }
+
+    public boolean isHasHealthData() { return hasHealthData; }
+    public void setHasHealthData(boolean hasHealthData) { this.hasHealthData = hasHealthData; }
 }
